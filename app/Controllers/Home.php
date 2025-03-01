@@ -11,6 +11,6 @@ class Home extends BaseController
         $query   = $db->query('SELECT 1=1 as res');
         $results = $query->getRow();
 
-        return view('home', ['title' => 'Home', 'res' => $results]);
+        return view('welcome_message', ['title' => 'Home', 'res' => $results]);
     }
 }
